@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B3C8CF;
+}
+
+/* Hide spinner arrows for number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.login-container {
+    width: 600px;
+    margin: 100px auto;
+    background-color: #E5DDC5;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+img {
+    width: 250px;
+    margin-left:20px ;
+    float: left;
+}
+h1 {
+    text-align: center;
+    color: #265073;  
+    margin-right: 250px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #265073;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="Number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #B3C8CF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #51829B;
+}
+
+@media screen and (max-width: 1024px) {
+    .login-container {
+        width: 500px;
+        margin: 100px auto;
+        background-color: #E5DDC5;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        width: 200px;
+        margin-left:20px ;
+        float: left;
+    }
+    h1 {
+        text-align: center;
+        color: #265073;  
+        margin-right: 250px;
+        font-size: 24px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #265073;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 400px;
+        margin: 100px auto;
+        background-color: #E5DDC5;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        width: 140px;
+        margin-left:10px ;
+        float: left;
+    }
+    h1 {
+        text-align: center;
+        color: #265073;  
+        margin-right: 170px;
+        margin-top: 20px;
+        font-size: 19px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #265073;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .login-container {
+        width: 300px;
+        margin: 100px auto;
+        background-color: #E5DDC5;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        width: 120px;
+        margin-left:5px ;
+        float: left;
+    }
+    h1 {
+        text-align: center;
+        color: #265073;  
+        margin-right: 70px;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #265073;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .login-container {
+        width: 250px;
+        margin: 100px auto;
+        background-color: #E5DDC5;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        width: 100px;
+        margin-left:5px ;
+        float: left;
+    }
+    h1 {
+        text-align: center;
+        color: #265073;  
+        margin-right: 50px;
+        margin-top: 30px;
+        font-size: 11px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #265073;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .login-container {
+        width: 200px;
+        margin: 100px auto;
+        background-color: #E5DDC5;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        width: 100px;
+        margin-left:5px ;
+        float: left;
+    }
+    h1 {
+        text-align: center;
+        color: #265073;  
+        margin-right: 0px;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #265073;
+    }
+}

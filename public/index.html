@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <title>MA'HADUL MAWHŪB LINTISHĀRIL MAWĀHIB 👳🏾‍♀️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div>
+		<span>
+			<img src="/Logo.png" alt="logo">
+		<h1>MA'HADUL MAWHŪB LINTISHĀRIL MAWĀHIB</h1>
+		</span>
+		
+	</div>
+    <div class="login-container">
+        <h2>Register Here</h2>
+        <form action="/register" method="POST" class="login-form">
+            <div class="form-group">
+                <label for="username">First Name:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your Last name" required>
+            </div>
+            <div class="form-group">
+                <label for="othernames">Other Names:</label>
+                <input type="text" id="othernames" name="othernames" placeholder="Enter your other names" required>
+            </div>
+            <div class="form-group">
+                <label for="Number">Mobile number</label>
+                <input type="number" id="Number" name="Number" placeholder="Enter your Mobile Number" required inputmode="numeric">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email Address</label>
+                <input type="text" id="Email" name="Email" placeholder="Enter your Email address" required>
+            </div>
+            <div class="form-group">
+                <p>Which level Do you want to enroll for?</p>
+                <label><input type="radio" name="level" value="Beginner"> Beginner Class</label>
+                <label><input type="radio" name="level" value="Intermediate"> Intermediate Class</label>
+                <label><input type="radio" name="level" value="Advanced"> Advanced Class</label>
+            </div>
+            <div class="form-group">
+                <p>How did you hear about the online Classes?</p>
+                <label><input type="radio" name="Socialmedia" value="Whatsapp">Whatsapp</label>
+                <label><input type="radio" name="Socialmedia" value="Facebook"> Facebook</label>
+                <label><input type="radio" name="Socialmedia" value="Tiktok"> Tiktok</label>
+                <label><input type="radio" name="Socialmedia" value="Instagram"> Instagram</label>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend the online classes to others?</p>
+                <label><input type="radio" name="recommendation" value="Yes"> Yes</label>
+                <label><input type="radio" name="recommendation" value="No"> No</label>
+            </div>
+            <button type="submit" class="btn-login">Register</button>
+        </form>
+    </div>
+</body>
+</html>
