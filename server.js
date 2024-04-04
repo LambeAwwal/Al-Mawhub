@@ -7,10 +7,10 @@ const port = 3000;
 
 // Create a new pool instance
 const client = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'Endowed',
-    password: '12345',
+    user: 'endowed_user',
+    host: 'dpg-co78i9f109ks73845nlg-a',
+    database: 'endowed',
+    password: 'vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM',
     port: 5432, // Default PostgreSQL port
 });
 client.connect();
