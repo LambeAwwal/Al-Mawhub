@@ -12,9 +12,9 @@ const client = new Client({
     database: 'endowed',
     password: 'vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM',
     port: 5432, // Default PostgreSQL port
- 
- External Database URL: "postgres://endowed_user:vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM@dpg-co78i9f109ks73845nlg-a.oregon-postgres.render.com/endowed",
- PSQL Command: "PGPASSWORD=vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM psql -h dpg-co78i9f109ks73845nlg-a.oregon-postgres.render.com -U endowed_user endowed",
+//  Internal Database URL: "postgres://endowed_user:vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM@dpg-co78i9f109ks73845nlg-a/endowed",
+//  External Database URL: "postgres://endowed_user:vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM@dpg-co78i9f109ks73845nlg-a.oregon-postgres.render.com/endowed",
+//  PSQL Command: "PGPASSWORD=vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM psql -h dpg-co78i9f109ks73845nlg-a.oregon-postgres.render.com -U endowed_user endowed",
 });
 client.connect();
 
