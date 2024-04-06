@@ -6,7 +6,7 @@ if (process.env.DB_URL) {
       process.env.DB_USER,
       process.env.DB_PW,
       {
-        host: 'localHost',
+        host: 'localhost',
         dialect: 'postgres',
       },
     );
