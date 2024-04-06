@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path'); 
 const { Pool } = require('pg');
 const app = express();
-const port = 3001;
+const port = 3000;
 const PORT = process.env.PORT || 3001;
 // Create a new pool instance
 const pool = new Pool({
