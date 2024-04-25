@@ -7,14 +7,14 @@ const port = 3000;
 const PORT = process.env.PORT || 3001;
 // Create a new pool instance
 const pool = new Pool({
-    user: "endowed_user",
-    host: "dpg-co78i9f109ks73845nlg-a",
-    database: "endowed",
-    password: "vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM",
+    user: "the_endowed_user",
+    host: "dpg-cokgutv79t8c73cafu80-a",
+    database: "the_endowed",
+    password: "CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp",
     port: 5432, // Default PostgreSQL port
-//  Internal Database URL: "postgres://endowed_user:vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM@dpg-co78i9f109ks73845nlg-a/endowed",
-//  External Database URL: "postgres://endowed_user:vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM@dpg-co78i9f109ks73845nlg-a.oregon-postgres.render.com/endowed",
-//  PSQL Command: "PGPASSWORD=vv0LBLAQ2j1WGfjaPVDZunhDknhST3oM psql -h dpg-co78i9f109ks73845nlg-a.oregon-postgres.render.com -U endowed_user endowed",
+//  Internal Database URL: "postgres://the_endowed_user:CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp@dpg-cokgutv79t8c73cafu80-a/the_endowed",
+//  External Database URL: "postgres://the_endowed_user:CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp@dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com/the_endowed",
+//  PSQL Command: "PGPASSWORD=CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp psql -h dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com -U the_endowed_user the_endowed",
 });
 
 app.use(express.urlencoded({ extended: true }));
