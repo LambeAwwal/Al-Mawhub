@@ -16,6 +16,7 @@ const pool = new Pool({
 //  External Database URL: "postgres://the_endowed_user:CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp@dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com/the_endowed",
 //  PSQL Command: "PGPASSWORD=CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp psql -h dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com -U the_endowed_user the_endowed",
 });
+connectionString = `postgres://${UserName}: ${Password}@${Host}:${Port}/${DataBase}`;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -27,8 +28,8 @@ app.get('/', (req, res) => {
 app.post('/register', async (req, res) => {
     const userData = {
         firstName: req.body.username,
-        lastName: req.body.lastname,
-        otherNames: req.body.othernames,
+        lastName: req.body.lastName,
+        otherNames: req.body.otherNames,
         mobileNumber: req.body.Number,
         emailAddress: req.body.Email,
         level: req.body.level,
@@ -52,10 +53,10 @@ app.post('/register', async (req, res) => {
 });
 async function registerUser() {
     const firstName = document.getElementById('firstName').value;
-    const lastName = document.getElementById('lasttName').value;
-    const othertNames = document.getElementById('otherNames').value;
+    const lastName = document.getElementById('lastName').value;
+    const otherNames = document.getElementById('otherNames').value;
     const mobileNumber = document.getElementById('mobileNumber').value;
-    const emailAddress = document.getElementById('emailAdress').value;
+    const emailAddress = document.getElementById('emailAddress').value;
     const level = document.getElementById('level').value;
     const socialMedia = document.getElementById('socialMedia').value;
     const recommendation = document.getElementById('recommendation').value;
@@ -63,9 +64,9 @@ async function registerUser() {
 
     const data = {
         username: firstName,
-        lastName: lastname,
-        otherNames: othernames,
-        mobileNumber: Number,
+        lastName: lastName,
+        otherNames: otherNames,
+        mobileNumber: mobileNumber,
         emailAddress: Email,
         level: level,
         socialMedia: socialMedia,
