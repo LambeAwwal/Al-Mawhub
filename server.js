@@ -16,7 +16,7 @@ const pool = new Pool({
 //  External Database URL: "postgres://the_endowed_user:CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp@dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com/the_endowed",
 //  PSQL Command: "PGPASSWORD=CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp psql -h dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com -U the_endowed_user the_endowed",
 });
-connectionString = `postgres://${UserName}: ${Password}@${Host}:${Port}/${DataBase}`;
+connectionString = `postgres://${firstName}: ${Password}@${Host}:${Port}/${DataBase}`;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -63,7 +63,7 @@ async function registerUser() {
     // ... other user data from form fields
 
     const data = {
-        username: firstName,
+        userName: firstName,
         lastName: lastName,
         otherNames: otherNames,
         mobileNumber: mobileNumber,
