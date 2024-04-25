@@ -4,7 +4,7 @@ const path = require('path');
 const { Pool } = require('pg');
 const app = express();
 const port = 3000;
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 // Create a new pool instance
 const pool = new Pool({
     user: "the_endowed_user",
