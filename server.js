@@ -27,19 +27,7 @@ app.post('/register', async (req, res) => {
         recommendation: req.body.recommendation
     };
 
-  try {
-        // Insert user data into the database
-        const client = await pool.connect();
-        await client.query('INSERT INTO users (first_name, last_name, other_names, mobile_number, email_address, level, social_media, recommendation) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)', 
-            [userData.firstName, userData.lastName, userData.otherNames, userData.mobileNumber, userData.emailAddress, userData.level, userData.socialMedia, userData.recommendation])
-            await client.release();
-        // If insertion is successful, redirect to registration success page
-        res.redirect('/successful.html');
-    } catch (error) {
-        // Log and handle any errors that occur during insertion
-        console.error('Error registering user:', error);
-        res.status(500).send('Internal Server Error');
-    }
+  
 });
 
     async function registerUser() {

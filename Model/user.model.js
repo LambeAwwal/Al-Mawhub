@@ -14,3 +14,17 @@ const pool = new Pool({
 //  PSQL Command: "PGPASSWORD=CLPP3rOkQmcXuv2UGod82cemYlvqL6Qp psql -h dpg-cokgutv79t8c73cafu80-a.oregon-postgres.render.com -U the_endowed_user the_endowed",
 });
 // connectionString = `postgres://${firstName}: ${Password}@${Host}:${Port}/${DataBase}`;
+
+try {
+    // Insert user data into the database
+    const client = await pool.connect();
+    await client.query('INSERT INTO users (first_name, last_name, other_names, mobile_number, email_address, level, social_media, recommendation) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)', 
+        [userData.firstName, userData.lastName, userData.otherNames, userData.mobileNumber, userData.emailAddress, userData.level, userData.socialMedia, userData.recommendation])
+        await client.release();
+    // If insertion is successful, redirect to registration success page
+    res.redirect('/successful.html');
+} catch (error) {
+    // Log and handle any errors that occur during insertion
+    console.error('Error registering user:', error);
+    res.status(500).send('Internal Server Error');
+}
